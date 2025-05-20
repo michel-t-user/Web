@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Événements - Campus Events Hub</title>
+  <link rel="stylesheet" href="styleHub.css" />
+  <script defer src="search.js"></script>
+</head>
+<body>
+
+  <header>
+    <nav class="navbar">
+      <div class="logo">Campus Events Hub</div>
+      <ul class="nav-links">
+        <li><a href="Hub.html">Accueil</a></li>
+        <li><a href="events.html" class="active">Événements</a></li>
+        <li><a href="login.html">Connexion</a></li>
+        <li><a href="registration.html">Inscription</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="events">
+      <h2>Liste des événements</h2>
+
+      <!-- Barre de recherche -->
+      <div class="search-bar">
+        <input type="text" id="searchInput" placeholder="Rechercher un événement...">
+      </div>
+
+      <div class="event-grid" id="eventGrid">
+        <div class="event-card">
+          <h3>Match de football</h3>
+          <p>Venez supporter votre équipe locale.</p>
+          <p><strong>Date :</strong> 24 mai 2025</p>
+          <p><strong>Lieu :</strong> Stade universitaire</p>
+        </div>
+        <div class="event-card">
+          <h3>Atelier Python débutant</h3>
+          <p>Introduction à la programmation avec Python.</p>
+          <p><strong>Date :</strong> 27 mai 2025</p>
+          <p><strong>Lieu :</strong> Salle C3</p>
+        </div>
+        <!-- Ajouter d'autres événements ici -->
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Campus Events Hub - Tous droits réservés.</p>
+  </footer>
+
+</body>
+</html>

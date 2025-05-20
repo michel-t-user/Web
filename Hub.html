@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Campus Events Hub</title>
+  <link rel="stylesheet" href="styleHub.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+
+  <!-- Barre de navigation -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">Campus Events Hub</div>
+      <ul class="nav-links">
+        <li><a href="Hub.html">Accueil</a></li>
+        <li><a href="events.html">Événements</a></li>
+        <li><a href="login.html" id="loginBtn">Connexion</a></li>
+        <li><a href="registration.html">Inscription</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Section principale -->
+  <main>
+    <div class="search-bar">
+        <input type="text" id="searchInput" placeholder="Rechercher un événement...">
+      </div>
+
+    <section class="hero">
+      <h1>Ne manque plus aucun événement sur le campus</h1>
+      <p>Explore, partage et participe aux activités de ta communauté universitaire.</p>
+      <a href="#" class="cta-button">Voir les événements</a>
+    </section>
+
+    <section class="events">
+      <h2>Événements à venir</h2>
+      <div class="event-grid">
+        <div class="event-card">
+          <h3>Atelier CV & Entretiens</h3>
+          <p>Prépare-toi pour les stages avec cet atelier animé par des pros RH.</p>
+          <p><strong>Date :</strong> 25 mai 2025</p>
+          <p><strong>Lieu :</strong> Salle A1</p>
+          <a href="#">Détails</a>
+        </div>
+        <!-- Répéter pour d'autres événements -->
+      </div>
+    </section>
+  </main>
+
+  <!-- Pied de page -->
+  <footer>
+    <p>&copy; 2025 Campus Events Hub - Tous droits réservés.</p>
+  </footer>
+
+  <!-- Modale de Connexion -->
+  <div id="loginModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Connexion</h2>
+      <form action="/login" method="POST">
+        <label for="email">Email :</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="password">Mot de passe :</label>
+        <input type="password" id="password" name="password" required />
+
+        <button type="submit">Se connecter</button>
+      </form>
+    </div>
+  </div>
+
+</body>
+</html>
